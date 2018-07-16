@@ -1,7 +1,0 @@
-﻿@using Intelledox.ViewModel.Core
-@inherits System.Web.Mvc.WebViewPage<Intelledox.ViewModel.Core.SummaryQuestionViewModel>
-@{ 
-    Layout = "~/Views/Shared/_QuestionLayout.cshtml";
-    var qid = @IdHelper.IdFor(Model.Question);
-}
-@Html.Raw(Model.Render())
